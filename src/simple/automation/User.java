@@ -1,8 +1,21 @@
 package simple.automation;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class User {
     private String login;
     private String password;
+
+    public List<String> users = Arrays.asList(
+            "Simple Smith",
+            "GwenSimp",
+            "AraSiMpLeNaMe",
+            "Simplen't task",
+            "do you si mple?",
+            "have a nice simplE",
+            "Stan Swagger",
+            "Shawn_simple");
 
     public String getLogin() {
         return login;

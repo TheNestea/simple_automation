@@ -2,17 +2,13 @@ package simple.automation;
 
 public class Main {
 
-    public final static String EXISTED_USER = "existed";
-    public final static String NOT_EXISTED_USER = "wrong";
-
     public static void main(String[] args) {
-        new AuthorizationTests().testLogin();
+        User instance = new User();
 
-        OrderTests orderTests = new OrderTests();
-        orderTests.testCreateOrder();
-        orderTests.testListOrders();
-
-        String bro;
+        for (String str : instance.users) {
+            if (str.toLowerCase().contains("simple")) {
+                System.out.println(str);
+            }
+        }
     }
-
 }
