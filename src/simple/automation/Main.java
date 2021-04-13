@@ -12,7 +12,8 @@ public class Main {
         orderTests.testCreateOrder();
         orderTests.testListOrders();
 
-        String bro;
+        String test;
+        orderTests.testListOrders();
     }
 
 }
